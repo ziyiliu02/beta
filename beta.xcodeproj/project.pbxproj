@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6453C3FF2AF4CB21007DD325 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6453C3FE2AF4CB21007DD325 /* HomeView.swift */; };
 		649622592AF4C81300EF1CCC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 649622582AF4C81300EF1CCC /* GoogleService-Info.plist */; };
 		64979BFC2AF49F4E007DF297 /* betaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64979BFB2AF49F4E007DF297 /* betaApp.swift */; };
-		64979BFE2AF49F4E007DF297 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64979BFD2AF49F4E007DF297 /* ContentView.swift */; };
 		64979C002AF49F50007DF297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64979BFF2AF49F50007DF297 /* Assets.xcassets */; };
 		64979C042AF49F50007DF297 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64979C032AF49F50007DF297 /* Preview Assets.xcassets */; };
 		64979C0C2AF4B6F5007DF297 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 64979C0B2AF4B6F5007DF297 /* FirebaseAuth */; };
@@ -19,10 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6453C3FE2AF4CB21007DD325 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		649622582AF4C81300EF1CCC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		64979BF82AF49F4E007DF297 /* beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64979BFB2AF49F4E007DF297 /* betaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = betaApp.swift; sourceTree = "<group>"; };
-		64979BFD2AF49F4E007DF297 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		64979BFF2AF49F50007DF297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64979C012AF49F50007DF297 /* beta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = beta.entitlements; sourceTree = "<group>"; };
 		64979C032AF49F50007DF297 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -43,6 +43,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6496225B2AF4C98100EF1CCC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6496225C2AF4C98900EF1CCC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6496225D2AF4C99000EF1CCC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6496225E2AF4C99800EF1CCC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6496225F2AF4C9A200EF1CCC /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		649622602AF4C9A600EF1CCC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		649622612AF4C9AE00EF1CCC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				649622692AF4CA1100EF1CCC /* Root */,
+				649622682AF4CA0800EF1CCC /* Authentication */,
+				649622672AF4CA0000EF1CCC /* TabBar */,
+				649622662AF4C9F300EF1CCC /* Theatre */,
+				649622652AF4C9ED00EF1CCC /* Studio */,
+				649622642AF4C9E600EF1CCC /* Profile */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		649622622AF4C9B200EF1CCC /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		649622642AF4C9E600EF1CCC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		649622652AF4C9ED00EF1CCC /* Studio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Studio;
+			sourceTree = "<group>";
+		};
+		649622662AF4C9F300EF1CCC /* Theatre */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Theatre;
+			sourceTree = "<group>";
+		};
+		649622672AF4CA0000EF1CCC /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		649622682AF4CA0800EF1CCC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		649622692AF4CA1100EF1CCC /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				6453C3FE2AF4CB21007DD325 /* HomeView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		64979BEF2AF49F4E007DF297 = {
 			isa = PBXGroup;
 			children = (
@@ -62,9 +167,16 @@
 		64979BFA2AF49F4E007DF297 /* beta */ = {
 			isa = PBXGroup;
 			children = (
+				649622622AF4C9B200EF1CCC /* App */,
+				649622612AF4C9AE00EF1CCC /* Core */,
+				649622602AF4C9A600EF1CCC /* Components */,
+				6496225F2AF4C9A200EF1CCC /* Font */,
+				6496225E2AF4C99800EF1CCC /* Extensions */,
+				6496225D2AF4C99000EF1CCC /* Models */,
+				6496225C2AF4C98900EF1CCC /* Services */,
+				6496225B2AF4C98100EF1CCC /* Utils */,
 				649622582AF4C81300EF1CCC /* GoogleService-Info.plist */,
 				64979BFB2AF49F4E007DF297 /* betaApp.swift */,
-				64979BFD2AF49F4E007DF297 /* ContentView.swift */,
 				64979BFF2AF49F50007DF297 /* Assets.xcassets */,
 				64979C012AF49F50007DF297 /* beta.entitlements */,
 				64979C022AF49F50007DF297 /* Preview Content */,
@@ -160,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64979BFE2AF49F4E007DF297 /* ContentView.swift in Sources */,
+				6453C3FF2AF4CB21007DD325 /* HomeView.swift in Sources */,
 				64979BFC2AF49F4E007DF297 /* betaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
