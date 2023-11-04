@@ -13,11 +13,23 @@ struct HomeView: View {
             Color.theme.yellow
                 .ignoresSafeArea()
             
-            Text("Cherrypick Beta")
-                .fontWeight(.bold)
+            Text("Cherrypick")
+                .font(.custom("PermanentMarker-Regular", size: 34))
         }
         .foregroundStyle(Color.white)
     }
+    
+    /*
+    init() {
+        for familyName in UIFont.familyNames {
+            print(familyName)
+            
+            for fontName in UIFont.fontNames(forFamilyName: familyName) {
+                print("-- \(fontName)")
+            }
+        }
+    }
+     */
 }
 
 struct HomeView_Previews: PreviewProvider {
