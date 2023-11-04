@@ -16,6 +16,7 @@
 		64979C0E2AF4B6F5007DF297 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 64979C0D2AF4B6F5007DF297 /* FirebaseFirestore */; };
 		64979C102AF4B6F5007DF297 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 64979C0F2AF4B6F5007DF297 /* FirebaseFirestoreSwift */; };
 		64979C122AF4B6F5007DF297 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 64979C112AF4B6F5007DF297 /* FirebaseStorage */; };
+		64BED6292AF61688000BB905 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BED6282AF61688000BB905 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		64979BFF2AF49F50007DF297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64979C012AF49F50007DF297 /* beta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = beta.entitlements; sourceTree = "<group>"; };
 		64979C032AF49F50007DF297 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64BED6282AF61688000BB905 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		6496225E2AF4C99800EF1CCC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				64BED6282AF61688000BB905 /* Color.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			files = (
 				6453C3FF2AF4CB21007DD325 /* HomeView.swift in Sources */,
 				64979BFC2AF49F4E007DF297 /* betaApp.swift in Sources */,
+				64BED6292AF61688000BB905 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +404,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"beta/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = beta/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -436,6 +441,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"beta/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = beta/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

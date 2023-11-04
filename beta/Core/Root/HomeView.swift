@@ -9,7 +9,14 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Cherrypick Beta")
+        ZStack {
+            Color.theme.yellow
+                .ignoresSafeArea()
+            
+            Text("Cherrypick Beta")
+                .fontWeight(.bold)
+        }
+        .foregroundStyle(Color.white)
     }
 }
 
