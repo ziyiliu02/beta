@@ -13,8 +13,14 @@ struct HomeView: View {
             Color.theme.yellow
                 .ignoresSafeArea()
             
-            Text("Cherrypick")
-                .font(.custom("PermanentMarker-Regular", size: 34))
+            VStack {
+                Image("logo")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                
+                Text("Cherrypick")
+                    .font(.custom("PermanentMarker-Regular", size: 34))
+            }
         }
         .foregroundStyle(Color.white)
     }
