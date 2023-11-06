@@ -16,7 +16,7 @@ struct betaApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            WelcomeView()
         }
     }
 }

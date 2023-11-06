@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6453C3FF2AF4CB21007DD325 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6453C3FE2AF4CB21007DD325 /* HomeView.swift */; };
+		648ED4BE2AF88684001F325B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648ED4BD2AF88683001F325B /* LoginView.swift */; };
 		649622592AF4C81300EF1CCC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 649622582AF4C81300EF1CCC /* GoogleService-Info.plist */; };
 		64979BFC2AF49F4E007DF297 /* betaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64979BFB2AF49F4E007DF297 /* betaApp.swift */; };
 		64979C002AF49F50007DF297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64979BFF2AF49F50007DF297 /* Assets.xcassets */; };
@@ -16,18 +16,24 @@
 		64979C0E2AF4B6F5007DF297 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 64979C0D2AF4B6F5007DF297 /* FirebaseFirestore */; };
 		64979C102AF4B6F5007DF297 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 64979C0F2AF4B6F5007DF297 /* FirebaseFirestoreSwift */; };
 		64979C122AF4B6F5007DF297 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 64979C112AF4B6F5007DF297 /* FirebaseStorage */; };
+		64BA2CA42AF7570F00F60822 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA2CA32AF7570F00F60822 /* WelcomeView.swift */; };
+		64BA2CA72AF75FA200F60822 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA2CA62AF75FA200F60822 /* RegistrationView.swift */; };
+		64BA2CA92AF7C38F00F60822 /* BioAuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA2CA82AF7C38F00F60822 /* BioAuthButton.swift */; };
 		64BED6292AF61688000BB905 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BED6282AF61688000BB905 /* Color.swift */; };
 		64BED62E2AF66FF1000BB905 /* PermanentMarker-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64BED62D2AF66FF1000BB905 /* PermanentMarker-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6453C3FE2AF4CB21007DD325 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		648ED4BD2AF88683001F325B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		649622582AF4C81300EF1CCC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		64979BF82AF49F4E007DF297 /* beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64979BFB2AF49F4E007DF297 /* betaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = betaApp.swift; sourceTree = "<group>"; };
 		64979BFF2AF49F50007DF297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64979C012AF49F50007DF297 /* beta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = beta.entitlements; sourceTree = "<group>"; };
 		64979C032AF49F50007DF297 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64BA2CA32AF7570F00F60822 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		64BA2CA62AF75FA200F60822 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		64BA2CA82AF7C38F00F60822 /* BioAuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioAuthButton.swift; sourceTree = "<group>"; };
 		64BED6282AF61688000BB905 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		64BED62D2AF66FF1000BB905 /* PermanentMarker-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PermanentMarker-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +93,7 @@
 		649622602AF4C9A600EF1CCC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				64BA2CA82AF7C38F00F60822 /* BioAuthButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -142,6 +149,7 @@
 		649622682AF4CA0800EF1CCC /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				64BA2CA52AF7582100F60822 /* View */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -149,7 +157,7 @@
 		649622692AF4CA1100EF1CCC /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				6453C3FE2AF4CB21007DD325 /* HomeView.swift */,
+				64BA2CA32AF7570F00F60822 /* WelcomeView.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -196,6 +204,15 @@
 				64979C032AF49F50007DF297 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		64BA2CA52AF7582100F60822 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64BA2CA62AF75FA200F60822 /* RegistrationView.swift */,
+				648ED4BD2AF88683001F325B /* LoginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,9 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6453C3FF2AF4CB21007DD325 /* HomeView.swift in Sources */,
+				648ED4BE2AF88684001F325B /* LoginView.swift in Sources */,
 				64979BFC2AF49F4E007DF297 /* betaApp.swift in Sources */,
 				64BED6292AF61688000BB905 /* Color.swift in Sources */,
+				64BA2CA92AF7C38F00F60822 /* BioAuthButton.swift in Sources */,
+				64BA2CA42AF7570F00F60822 /* WelcomeView.swift in Sources */,
+				64BA2CA72AF75FA200F60822 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
