@@ -27,19 +27,7 @@ struct WelcomeView: View {
                     
                     Spacer()
                     
-                    Button {
-                        // To Do
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 14)
-                                .foregroundStyle(Color.white)
-                                .frame(height: 50)
-                            
-                            Text("Join!:)")
-                                .foregroundStyle(Color.theme.yellow)
-                                .fontWeight(.bold)
-                        }
-                    }
+                    LargeButton(text: "Join!:)", color: Color.theme.yellow)
                     .padding(.horizontal)
                     .padding(.bottom)
                     
