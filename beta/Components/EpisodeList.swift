@@ -26,7 +26,7 @@ struct EpisodeList: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 10) {
-                    ForEach(1 ..< 5) { episode in
+                    ForEach(1 ..< 5, id: \.self) { episode in
                         VStack {
                             Rectangle()
                                 .frame(width: 100, height: 110)

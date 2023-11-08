@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64076D952AFB56B800F992DA /* StudioSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64076D942AFB56B800F992DA /* StudioSectionHeader.swift */; };
+		64076D972AFB578300F992DA /* TagList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64076D962AFB578300F992DA /* TagList.swift */; };
 		648ED4BE2AF88684001F325B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648ED4BD2AF88683001F325B /* LoginView.swift */; };
 		648ED4C32AF8BEF7001F325B /* AuthTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648ED4C22AF8BEF7001F325B /* AuthTextFieldModifier.swift */; };
 		648ED4C52AF8CD4A001F325B /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648ED4C42AF8CD4A001F325B /* LargeButton.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64076D942AFB56B800F992DA /* StudioSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioSectionHeader.swift; sourceTree = "<group>"; };
+		64076D962AFB578300F992DA /* TagList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagList.swift; sourceTree = "<group>"; };
 		648ED4BD2AF88683001F325B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		648ED4C22AF8BEF7001F325B /* AuthTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextFieldModifier.swift; sourceTree = "<group>"; };
 		648ED4C42AF8CD4A001F325B /* LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 				648ED4D82AF9E6F8001F325B /* EpisodeIcon.swift */,
 				648ED4D42AF9E5A2001F325B /* EpisodeCarouselView.swift */,
 				648ED4D62AF9E611001F325B /* EpisodeList.swift */,
+				64076D942AFB56B800F992DA /* StudioSectionHeader.swift */,
+				64076D962AFB578300F992DA /* TagList.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -364,8 +370,10 @@
 				648ED4C72AF90FD7001F325B /* MainTabView.swift in Sources */,
 				648ED4D12AF91309001F325B /* ProfileView.swift in Sources */,
 				64979BFC2AF49F4E007DF297 /* betaApp.swift in Sources */,
+				64076D972AFB578300F992DA /* TagList.swift in Sources */,
 				648ED4C52AF8CD4A001F325B /* LargeButton.swift in Sources */,
 				64BED6292AF61688000BB905 /* Color.swift in Sources */,
+				64076D952AFB56B800F992DA /* StudioSectionHeader.swift in Sources */,
 				64BA2CA92AF7C38F00F60822 /* BioAuthButton.swift in Sources */,
 				648ED4CD2AF912DE001F325B /* StudioView.swift in Sources */,
 				648ED4D52AF9E5A3001F325B /* EpisodeCarouselView.swift in Sources */,
