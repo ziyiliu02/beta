@@ -27,7 +27,9 @@ struct WelcomeView: View {
                     
                     Spacer()
                     
-                    LargeButton(text: "Join!:)", color: Color.theme.yellow)
+                    LargeButton(text: "Join!:)", color: Color.theme.yellow) {
+                       // To Do
+                    }
                     .padding(.horizontal)
                     .padding(.bottom)
                     

@@ -35,10 +35,10 @@ struct ProfileView: View {
                         .font(.title2)
                         .bold()
                     
-                    Text("@username")
+                    Text("@name01")
                         .foregroundStyle(Color.theme.gray)
                     
-                    Text("2023")
+                    Text("Description")
                         .padding(.top, 5)
                 }
                 

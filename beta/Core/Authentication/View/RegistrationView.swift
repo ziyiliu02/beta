@@ -35,9 +35,7 @@ struct RegistrationView_Previews: PreviewProvider {
 }
 
 struct RegistrationForm: View {
-    @State private var name = ""
-    @State private var email = ""
-    @State private var password = ""
+    @StateObject var viewModel = RegistrationViewModel()
     
     var body: some View {
         VStack(spacing: 40) {
@@ -46,16 +44,25 @@ struct RegistrationForm: View {
                 .fontWeight(.bold)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
-            TextField("Name", text: $name)
+            if !viewModel.errorMessage.isEmpty {
+                Text(viewModel.errorMessage)
+                    .foregroundStyle(Color.red)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 5)
+            }
+            
+            TextField("Name", text: $viewModel.name)
                 .modifier(AuthTextFieldModifier())
             
-            TextField("Email", text: $email)
+            TextField("Email", text: $viewModel.email)
                 .modifier(AuthTextFieldModifier())
             
-            SecureField("Password", text: $password)
+            SecureField("Password", text: $viewModel.password)
                 .modifier(AuthTextFieldModifier())
             
-            LargeButton(text: "Join! :)", color: Color.white)
+            LargeButton(text: "Join! :)", color: Color.white) {
+                Task { try await viewModel.createUser() }
+            }
             .padding(.top)
         }
     }

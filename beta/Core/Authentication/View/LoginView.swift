@@ -52,7 +52,9 @@ struct LoginForm: View {
             SecureField("Password", text: $password)
                 .modifier(AuthTextFieldModifier())
             
-            LargeButton(text: "Enter! :)", color: Color.white)
+            LargeButton(text: "Enter! :)", color: Color.white) {
+                // TO DO
+            }
             .padding(.top)
         }
     }

@@ -11,10 +11,11 @@ struct LargeButton: View {
     
     var text: String
     var color: Color
+    var buttonAction: () -> Void
     
     var body: some View {
         Button {
-            // To Do
+            buttonAction()
         } label: {
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
@@ -30,6 +31,8 @@ struct LargeButton: View {
 
 struct LargeButton_Previews: PreviewProvider {
     static var previews: some View {
-        LargeButton(text: "Cherrypick", color: Color.white)
+        LargeButton(text: "Cherrypick", color: Color.white) {
+            // 
+        }
     }
 }

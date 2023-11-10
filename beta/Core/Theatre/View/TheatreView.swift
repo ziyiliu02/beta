@@ -126,7 +126,9 @@ struct RatingSheetView: View {
             }
             .padding(.vertical)
             
-            LargeButton(text: "Rate", color: Color.white)
+            LargeButton(text: "Rate", color: Color.white) {
+               // To Do
+            }
 
         }
     }
