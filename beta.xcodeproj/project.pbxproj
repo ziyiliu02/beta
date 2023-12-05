@@ -29,12 +29,15 @@
 		64979C102AF4B6F5007DF297 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 64979C0F2AF4B6F5007DF297 /* FirebaseFirestoreSwift */; };
 		64979C122AF4B6F5007DF297 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 64979C112AF4B6F5007DF297 /* FirebaseStorage */; };
 		64B9A39C2AFDE46E00E04778 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9A39B2AFDE46E00E04778 /* AuthService.swift */; };
-		64BA2CA42AF7570F00F60822 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA2CA32AF7570F00F60822 /* WelcomeView.swift */; };
+		64B9A39E2AFE056600E04778 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9A39D2AFE056600E04778 /* RootView.swift */; };
+		64B9A3A02AFE059000E04778 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9A39F2AFE059000E04778 /* WelcomeView.swift */; };
+		64B9A3A42AFE145300E04778 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9A3A32AFE145300E04778 /* RootViewModel.swift */; };
 		64BA2CA72AF75FA200F60822 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA2CA62AF75FA200F60822 /* RegistrationView.swift */; };
 		64BA2CA92AF7C38F00F60822 /* BioAuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BA2CA82AF7C38F00F60822 /* BioAuthButton.swift */; };
 		64BED6292AF61688000BB905 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BED6282AF61688000BB905 /* Color.swift */; };
 		64BED62E2AF66FF1000BB905 /* PermanentMarker-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64BED62D2AF66FF1000BB905 /* PermanentMarker-Regular.ttf */; };
 		64C404F22AFCC71000048F48 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C404F12AFCC71000048F48 /* RegistrationViewModel.swift */; };
+		64D583AA2B1F29BB006DA180 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D583A92B1F29BA006DA180 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,12 +61,15 @@
 		64979C012AF49F50007DF297 /* beta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = beta.entitlements; sourceTree = "<group>"; };
 		64979C032AF49F50007DF297 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64B9A39B2AFDE46E00E04778 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		64BA2CA32AF7570F00F60822 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		64B9A39D2AFE056600E04778 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		64B9A39F2AFE059000E04778 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		64B9A3A32AFE145300E04778 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		64BA2CA62AF75FA200F60822 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		64BA2CA82AF7C38F00F60822 /* BioAuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioAuthButton.swift; sourceTree = "<group>"; };
 		64BED6282AF61688000BB905 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		64BED62D2AF66FF1000BB905 /* PermanentMarker-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PermanentMarker-Regular.ttf"; sourceTree = "<group>"; };
 		64C404F12AFCC71000048F48 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		64D583A92B1F29BA006DA180 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +188,7 @@
 		649622622AF4C9B200EF1CCC /* App */ = {
 			isa = PBXGroup;
 			children = (
+				64979BFB2AF49F4E007DF297 /* betaApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -231,7 +238,8 @@
 		649622692AF4CA1100EF1CCC /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				64BA2CA32AF7570F00F60822 /* WelcomeView.swift */,
+				64B9A3A12AFE06E400E04778 /* View */,
+				64B9A3A22AFE06ED00E04778 /* ViewModel */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -264,7 +272,6 @@
 				6496225C2AF4C98900EF1CCC /* Services */,
 				6496225B2AF4C98100EF1CCC /* Utils */,
 				649622582AF4C81300EF1CCC /* GoogleService-Info.plist */,
-				64979BFB2AF49F4E007DF297 /* betaApp.swift */,
 				64979BFF2AF49F50007DF297 /* Assets.xcassets */,
 				64979C012AF49F50007DF297 /* beta.entitlements */,
 				64979C022AF49F50007DF297 /* Preview Content */,
@@ -280,9 +287,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		64B9A3A12AFE06E400E04778 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64B9A39D2AFE056600E04778 /* RootView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64B9A3A22AFE06ED00E04778 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				64B9A3A32AFE145300E04778 /* RootViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		64BA2CA52AF7582100F60822 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				64B9A39F2AFE059000E04778 /* WelcomeView.swift */,
 				64BA2CA62AF75FA200F60822 /* RegistrationView.swift */,
 				648ED4BD2AF88683001F325B /* LoginView.swift */,
 			);
@@ -293,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				64C404F12AFCC71000048F48 /* RegistrationViewModel.swift */,
+				64D583A92B1F29BA006DA180 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -386,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64D583AA2B1F29BB006DA180 /* LoginViewModel.swift in Sources */,
 				648ED4CA2AF912AD001F325B /* TheatreView.swift in Sources */,
 				648ED4C32AF8BEF7001F325B /* AuthTextFieldModifier.swift in Sources */,
 				648ED4BE2AF88684001F325B /* LoginView.swift in Sources */,
@@ -394,14 +420,16 @@
 				648ED4D12AF91309001F325B /* ProfileView.swift in Sources */,
 				64979BFC2AF49F4E007DF297 /* betaApp.swift in Sources */,
 				64B9A39C2AFDE46E00E04778 /* AuthService.swift in Sources */,
+				64B9A3A42AFE145300E04778 /* RootViewModel.swift in Sources */,
 				64076D972AFB578300F992DA /* TagList.swift in Sources */,
 				648ED4C52AF8CD4A001F325B /* LargeButton.swift in Sources */,
 				64BED6292AF61688000BB905 /* Color.swift in Sources */,
+				64B9A39E2AFE056600E04778 /* RootView.swift in Sources */,
 				64076D952AFB56B800F992DA /* StudioSectionHeader.swift in Sources */,
 				64BA2CA92AF7C38F00F60822 /* BioAuthButton.swift in Sources */,
 				648ED4CD2AF912DE001F325B /* StudioView.swift in Sources */,
 				648ED4D52AF9E5A3001F325B /* EpisodeCarouselView.swift in Sources */,
-				64BA2CA42AF7570F00F60822 /* WelcomeView.swift in Sources */,
+				64B9A3A02AFE059000E04778 /* WelcomeView.swift in Sources */,
 				648ED4D32AF9DF46001F325B /* NotificationButton.swift in Sources */,
 				64BA2CA72AF75FA200F60822 /* RegistrationView.swift in Sources */,
 				648ED4D92AF9E6F8001F325B /* EpisodeIcon.swift in Sources */,

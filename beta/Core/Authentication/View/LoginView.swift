@@ -36,8 +36,7 @@ struct LoginView_Previews: PreviewProvider {
 
 struct LoginForm: View {
     
-    @State private var email = ""
-    @State private var password = ""
+    @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
         VStack(spacing: 40) {
@@ -46,14 +45,16 @@ struct LoginForm: View {
                 .fontWeight(.bold)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
-            TextField("Email", text: $email)
+            TextField("Email", text: $viewModel.email)
+                .autocapitalization(.none)
                 .modifier(AuthTextFieldModifier())
             
-            SecureField("Password", text: $password)
+            SecureField("Password", text: $viewModel.password)
+                .autocapitalization(.none)
                 .modifier(AuthTextFieldModifier())
             
             LargeButton(text: "Enter! :)", color: Color.white) {
-                // TO DO
+                Task { try await viewModel.login() }
             }
             .padding(.top)
         }

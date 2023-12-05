@@ -2,7 +2,7 @@
 //  WelcomeView.swift
 //  beta
 //
-//  Created by Liu Ziyi on 5/11/23.
+//  Created by Liu Ziyi on 10/11/23.
 //
 
 import SwiftUI

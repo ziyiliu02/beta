@@ -55,9 +55,11 @@ struct RegistrationForm: View {
                 .modifier(AuthTextFieldModifier())
             
             TextField("Email", text: $viewModel.email)
+                .autocapitalization(.none)
                 .modifier(AuthTextFieldModifier())
             
             SecureField("Password", text: $viewModel.password)
+                .autocapitalization(.none)
                 .modifier(AuthTextFieldModifier())
             
             LargeButton(text: "Join! :)", color: Color.white) {
