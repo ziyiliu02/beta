@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -35,6 +36,7 @@ struct WelcomeView: View {
                     
                     NavigationLink {
                         LoginView()
+                            .navigationBarBackButtonHidden(true)
                     } label: {
                         HStack {
                             Text("Already have an account?")

@@ -78,6 +78,7 @@ struct RegistrationBioAuthButtons: View {
             
             NavigationLink {
                 LoginView()
+                    .navigationBarBackButtonHidden(true)
             } label: {
                 HStack {
                     Text("Already have an account?")
