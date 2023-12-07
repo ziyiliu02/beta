@@ -10,6 +10,8 @@
 		64076D952AFB56B800F992DA /* StudioSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64076D942AFB56B800F992DA /* StudioSectionHeader.swift */; };
 		64076D972AFB578300F992DA /* TagList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64076D962AFB578300F992DA /* TagList.swift */; };
 		648B13B12B217D5E00D91A85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B13B02B217D5E00D91A85 /* User.swift */; };
+		648B13B32B21927D00D91A85 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B13B22B21927D00D91A85 /* UserService.swift */; };
+		648B13B62B21A41000D91A85 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B13B52B21A41000D91A85 /* ProfileViewModel.swift */; };
 		648ED4BE2AF88684001F325B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648ED4BD2AF88683001F325B /* LoginView.swift */; };
 		648ED4C32AF8BEF7001F325B /* AuthTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648ED4C22AF8BEF7001F325B /* AuthTextFieldModifier.swift */; };
 		648ED4C52AF8CD4A001F325B /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648ED4C42AF8CD4A001F325B /* LargeButton.swift */; };
@@ -46,6 +48,8 @@
 		64076D942AFB56B800F992DA /* StudioSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioSectionHeader.swift; sourceTree = "<group>"; };
 		64076D962AFB578300F992DA /* TagList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagList.swift; sourceTree = "<group>"; };
 		648B13B02B217D5E00D91A85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		648B13B22B21927D00D91A85 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		648B13B52B21A41000D91A85 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		648ED4BD2AF88683001F325B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		648ED4C22AF8BEF7001F325B /* AuthTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextFieldModifier.swift; sourceTree = "<group>"; };
 		648ED4C42AF8CD4A001F325B /* LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
@@ -91,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		648B13B42B21A3E700D91A85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				648B13B52B21A41000D91A85 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		648ED4BF2AF8BEB3001F325B /* ViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +146,7 @@
 		6496225C2AF4C98900EF1CCC /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				648B13B22B21927D00D91A85 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -202,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				648ED4CF2AF912FE001F325B /* View */,
+				648B13B42B21A3E700D91A85 /* ViewModel */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -420,9 +434,11 @@
 				64D583AA2B1F29BB006DA180 /* LoginViewModel.swift in Sources */,
 				648ED4CA2AF912AD001F325B /* TheatreView.swift in Sources */,
 				648ED4C32AF8BEF7001F325B /* AuthTextFieldModifier.swift in Sources */,
+				648B13B62B21A41000D91A85 /* ProfileViewModel.swift in Sources */,
 				648B13B12B217D5E00D91A85 /* User.swift in Sources */,
 				648ED4BE2AF88684001F325B /* LoginView.swift in Sources */,
 				64C404F22AFCC71000048F48 /* RegistrationViewModel.swift in Sources */,
+				648B13B32B21927D00D91A85 /* UserService.swift in Sources */,
 				648ED4C72AF90FD7001F325B /* MainTabView.swift in Sources */,
 				648ED4D12AF91309001F325B /* ProfileView.swift in Sources */,
 				64979BFC2AF49F4E007DF297 /* betaApp.swift in Sources */,
