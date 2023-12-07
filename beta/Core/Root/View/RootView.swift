@@ -15,7 +15,7 @@ struct RootView: View {
             if viewModel.userSession != nil {
                 MainTabView()
             } else {
-                WelcomeView()
+                OnboardingView()
             }
         }
     }
