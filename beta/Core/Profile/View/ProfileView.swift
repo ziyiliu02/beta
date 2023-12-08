@@ -11,6 +11,10 @@ struct ProfileView: View {
     
     @StateObject var viewModel = ProfileViewModel()
     
+    private var currentUser: User? {
+        return viewModel.currentUser
+    }
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -35,15 +39,17 @@ struct ProfileView: View {
                     }
                     
                     VStack(alignment: .leading) {
-                        Text("Name")
+                        Text(currentUser?.name ?? "Name")
                             .font(.title2)
                             .bold()
                         
                         Text("@name01")
                             .foregroundStyle(Color.theme.gray)
                         
-                        Text("Description")
-                            .padding(.top, 5)
+                        if let bio = currentUser?.bio {
+                            Text(bio)
+                                .padding(.top, 5)
+                        }
                     }
                     
                     Spacer()
